@@ -9,6 +9,7 @@ for financial sentiment analysis data.
 from fastapi import FastAPI, Depends, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
+from sqlalchemy import func
 from typing import List, Optional
 import uvicorn
 
@@ -113,7 +114,7 @@ async def get_sentiment_summary(db: Session = Depends(get_db)):
     
     # Calculate average sentiment
     avg_sentiment = db.query(SentimentScore).with_entities(
-        db.func.avg(SentimentScore.compound_score).label('avg_sentiment')
+        func.avg(SentimentScore.compound_score).label('avg_sentiment')
     ).scalar() or 0.0
     
     return {
