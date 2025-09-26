@@ -1,0 +1,65 @@
+# Web Framework and API
+fastapi==0.104.1
+uvicorn==0.24.0
+graphene==3.3
+graphql-core==3.2.3
+strawberry-graphql==0.215.1
+
+# Database and ORM
+sqlalchemy==2.0.23
+alembic==1.12.1
+psycopg2-binary==2.9.9
+# sqlite3 is built into Python
+
+# Data Validation
+pydantic==2.5.0
+pydantic-settings==2.0.3
+
+# Data Processing
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Web Scraping
+beautifulsoup4==4.12.2
+requests==2.31.0
+selenium==4.15.2
+scrapy==2.11.0
+
+# Reddit API
+praw==7.7.1
+
+# NLP and Sentiment Analysis
+nltk>=3.8.1
+textblob>=0.17.1
+vaderSentiment>=3.3.2
+transformers>=4.35.2
+torch>=2.1.1
+
+# Utilities
+python-dotenv==1.0.0
+python-multipart==0.0.6
+Jinja2==3.1.2
+
+# Testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Development
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Data visualization support
+plotly==5.17.0
+matplotlib==3.8.2
+seaborn==0.13.0
+
+# Financial data
+yfinance==0.2.28
+alpha_vantage==2.3.1
+
+# Async support
+aiohttp==3.9.1
+aiofiles==23.2.1
+# asyncio is built into Python
