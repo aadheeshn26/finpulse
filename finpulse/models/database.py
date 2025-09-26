@@ -21,11 +21,11 @@ if DATABASE_URL.startswith("sqlite"):
         DATABASE_URL,
         connect_args={"check_same_thread": False},
         poolclass=StaticPool,
-        echo=True  # Set to False in production
+        echo=False  # Disabled for cleaner Power BI integration
     )
 else:
     # For PostgreSQL or other databases
-    engine = create_engine(DATABASE_URL, echo=True)
+    engine = create_engine(DATABASE_URL, echo=False)
 
 # Create SessionLocal class - each instance will be a database session
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)

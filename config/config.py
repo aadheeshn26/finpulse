@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     
     # Database configuration
     database_url: str = "sqlite:///./finpulse.db"
-    database_echo: bool = True  # Set to False in production
+    database_echo: bool = False  # Disabled for cleaner API responses
     
     # API Configuration
     api_title: str = "FinPulse API"
