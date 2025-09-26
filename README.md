@@ -21,7 +21,6 @@ FinPulse is a comprehensive financial sentiment analysis system that aggregates 
 - **Data Validation**: Pydantic
 - **API**: REST (FastAPI) + GraphQL
 - **Visualization**: Power BI
-- **Version Control**: Git
 
 ## 📁 Project Structure
 
@@ -43,18 +42,21 @@ finpulse/
 ## 🔧 Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/aadheeshn26/finpulse.git
 cd finpulse
 ```
 
 2. Create virtual environment:
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. Install dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
